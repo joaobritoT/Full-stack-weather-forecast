@@ -34,7 +34,7 @@ def principal():
         logradouro = endereco['logradouro']
         bairro = endereco['bairro']
 
-        api_key = '278701c7e42258b92df4e23adb0cefc8'
+        api_key = 'your_api_key_here'
         link_api2 = f"https://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={api_key}"
         requisicao = requests.get(link_api2)
         requisicao_dic = requisicao.json()
